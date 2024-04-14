@@ -1,0 +1,141 @@
+/*<uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 200 to 800
+
+.changa-<uniquifier> {
+  font-family: "Changa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+    font-family: "Changa", sans-serif;
+}
+
+body{
+    background-color: rgb(29, 29, 29);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    margin: 5px 0 40px 0;
+    width: 98vw;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 10px 5px 20px 5px  rgba(82, 82, 82, 0.918);
+
+   
+}
+.logoDev{
+    margin-top: 2vh;
+   height: 15vh;
+    border-radius: 50%;
+}
+
+div{
+    margin-top: 2vh;
+    display: flex;
+    gap: 1vw;
+}
+.img{
+   
+    width: 6vw;
+    border-radius: 0.5vw;
+    transition: 0.3s;
+    
+}
+.img:hover{
+    filter: brightness(50%);
+    width: 7vw;
+    padding-top: 0;
+    box-shadow: 0 0 0.5vw 0.2vw  rgba(82, 82, 82, 0.918);
+    
+
+}
+
+.fim{
+    z-index: 2;
+}
+
+.translate{
+    left: 1vw;
+}
+
+
+.m365{
+    right: 1vw;
+}
+
+.icon{
+    position: absolute;
+    bottom: 2vh;
+    width: 4vw;
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.icon:hover{
+    filter: brightness(50%);
+    width: 5vw;
+}
+
+
+@media screen and (orientation: portrait) {
+
+    div{
+        gap: 2vw;
+    }
+
+
+    .img{
+   
+        height: 12vh;
+        width: auto;
+        border-radius: 0.5vw;
+        transition: 0.3s;
+    }
+    .img:hover{
+        filter: brightness(50%);
+        height: 14vh;
+        width: auto;
+        padding-top: 0;
+    
+    }
+
+
+        .translate{
+            left:2vw;
+        }
+        
+        
+        .m365{
+            right: 2vw;
+        }
+        
+        .icon{
+            position: absolute;
+            bottom: 2vh;
+            height: 8vh;
+            width: auto;
+            z-index: 2;
+            transition: 0.3s;
+        }
+        
+        .icon:hover{
+            filter: brightness(50%);
+            height: 10vh;
+            width: auto;
+        }
+
+
+}
